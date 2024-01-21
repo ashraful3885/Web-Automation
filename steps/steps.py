@@ -134,7 +134,7 @@ def step_should_see_press_media_page(context):
     expected_title = "PRESS RELEASES"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on next option')
+@when('I click on next button')
 def step_click_next(context):
     next = context.driver.find_element(By.XPATH, "//span[@class='carousel-control-next-icon carousel-control-next-icon-blue']")
     next.click()
@@ -149,7 +149,7 @@ def step_should_see_next_page(context):
     expected_title = "2022"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on previous option')
+@when('I click on previous button')
 def step_click_previous(context):
     previous = context.driver.find_element(By.XPATH, "//span[@class='carousel-control-prev-icon']")
     previous.click()
@@ -202,7 +202,7 @@ def step_should_see_our_jobs_page(context):
     expected_title = "BUILD YOUR FUTURE WITH LAZADA"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Commercial" category')
+@when('I click on the "COMMERCIAL" category')
 def step_click_commercial_category(context):
     commercial_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='Commercial']")
     commercial_category.click()
@@ -239,7 +239,7 @@ def step_click_go_back_link(context):
     # Use time.sleep() instead of WebDriverWait
     time.sleep(5)
 
-@when('I click on the "Marketing" category')
+@when('I click on the "MARKETING" category')
 def step_click_marketing_category(context):
     marketing_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='MARKETING']")
     marketing_category.click()
@@ -255,7 +255,7 @@ def step_should_see_marketing_page(context):
     expected_title = "MARKETING"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Technology" category')
+@when('I click on the "TECHNOLOGY, AI & PRODUCT" category')
 def step_click_technology_category(context):
     technology_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='Technology, AI & Product']")
     technology_category.click()
@@ -271,7 +271,7 @@ def step_should_see_technology_page(context):
     expected_title = "TECHNOLOGY, AI & PRODUCT"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Security" category')
+@when('I click on the "SECURITY, RISK AND ENTERPRISE INTELLIGENCE" category')
 def step_click_security_category(context):
     security_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='SECURITY, RISK AND ENTERPRISE INTELLIGENCE']")
     security_category.click()
@@ -287,7 +287,7 @@ def step_should_see_security_page(context):
     expected_title = "SECURITY, RISK AND ENTERPRISE INTELLIGENCE"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Supply" category')
+@when('I click on the "SUPPLY CHAIN & LOGISTICS" category')
 def step_click_supply_category(context):
     supply_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='Supply Chain & Logistics']")
     supply_category.click()
@@ -303,7 +303,7 @@ def step_should_see_supply_page(context):
     expected_title = "SUPPLY CHAIN & LOGISTICS"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Corporate" category')
+@when('I click on the "CORPORATE FUNCTION" category')
 def step_click_corporate_category(context):
     corporate_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='CORPORATE FUNCTION']")
     corporate_category.click()
@@ -319,7 +319,7 @@ def step_should_see_corporate_page(context):
     expected_title = "CORPORATE FUNCTION"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Customer" category')
+@when('I click on the "CUSTOMER CARE" category')
 def step_click_customer_category(context):
     customer_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='Customer Care']")
     customer_category.click()
@@ -335,7 +335,7 @@ def step_should_see_customer_page(context):
     expected_title = "CUSTOMER CARE"
     assert expected_title in title_text, f"Expected title: {expected_title}, Actual title: {title_text}"
 
-@when('I click on the "Strategy" category')
+@when('I click on the "STRATEGY & MANAGEMENT" category')
 def step_click_strategy_category(context):
     strategy_category = context.driver.find_element(By.XPATH, "//p[normalize-space()='STRATEGY & MANAGEMENT']")
     strategy_category.click()
